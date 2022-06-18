@@ -1,6 +1,8 @@
 # MNIST-handdraw
 Hand draw a MNIST style image from a web browser and download the result.
 
+[Demo Page](https://jessewang-arvatosystems.github.io/MNIST-handdraw/index.html)
+
 ## To Use
 Simply draw on the canvas by left-clicking on it with a mouse.
 
