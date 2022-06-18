@@ -10,6 +10,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content {
+    flex: 1;
 }
 
 #reset {
@@ -34,4 +40,9 @@ details {
 fieldset {
     margin-top: 1em;
     width: 14em;
+}
+
+#credits {
+    align-self: flex-end;
+    margin: 0 1em 1em 0;
 }
