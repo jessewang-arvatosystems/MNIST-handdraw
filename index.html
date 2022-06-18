@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MNIST Hand Draw</title>
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body class="container">
+        <h1>MNIST Hand Draw</h1>
+        <canvas id="canvas"></canvas>
+        <div>
+            <button id="reset">Reset</button>
+        </div>
+        <div>
+            <input id="filenameInput" value="0.png" placeholder="filename as a number">
+            <button id="download">Download</button>
+            <a id="downloadLink" class="hidden" href="#" target="_blank">Download</a>
+        </div>
+        <details>
+            <summary>Additional Options</summary>
+            <fieldset>
+                <label>
+                    Invert Black & White:
+                    <input id="invertColors" type="checkbox">
+                </label>
+                <fieldset>
+                    <legend>
+                        <label for="strokeWidthInput">
+                            Stroke Width: <span id="currentWidth"></span> px
+                        </label>
+                    </legend>
+                    <input type="range" id="strokeWidthInput" min="10" max="30">
+                </fieldset>
+                <fieldset>
+                    <legend>After download:</legend>
+                    <label>
+                        Increment filename by 1
+                        <input id="incrementEnabled" type="checkbox" checked>
+                    </label>
+                    <label>
+                        Reset canvas
+                        <input id="resetEnabled" type="checkbox" checked>
+                    </label>
+                </fieldset>
+            </fieldset>
+        </details>
+    </body>
+    <script src="./scripts/image-js/image-js.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</html>
